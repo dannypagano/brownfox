@@ -2,18 +2,16 @@
 layout: default
 ---
 
-  <div class="py-5 container">
-    <div class="row rows-cols-lg-2">
-      <div class="col">
-        <h1>{{ page.title }}</h1>
-        {% for category in categories %}
-        <h6>{{ page.category }}</h6><br>
-        {% endfor %}
+<div class="py-5 container">
+  <div class="row rows-cols-lg-2">
+    <div class="col">
+      <h1>{{ page.title }}</h1>
+        <h6>Author: {{ work.author }}</h6>
     	</div>
      	<div class="col">
        <h4>{{ page.preview }}</h4>
-    	</div>
-	</div>
+    </div>
+  </div>
 </div>
 
 <div class="py-5 container">
