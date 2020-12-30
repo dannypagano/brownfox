@@ -1,6 +1,6 @@
-<div class="py-5 container">
+<div class="py-5 container-fluid">
     
-  <div class="row row-cols-1 rows-cols-md-2 row-cols-lg-2 cols-xl-4 cols-xxl-4">
+  <div class="row row-cols-1 row-cols-sm-1 rows-cols-md-2 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-4 mx-2">
         
       {% for work in site.work %}
      	<div class="col mb-2">
@@ -8,10 +8,12 @@
           	<div class="ratio ratio-16x9 pb-2">
            		<a href="{{ work.url }}"><img width="100%" src="{{ work.image }}"></a>
        		</div>
-            <div><a href="{{ work.url }}">
+            <div>
+              <a href="{{ work.url }}">
             	<h5>{{ work.title }}</h5>
               <p>{{ work.preview }}</p>
-            </div></a>
+            </div>
+           </a>
           </div>
         </div>
       {% endfor %}
