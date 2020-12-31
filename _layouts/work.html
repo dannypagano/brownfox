@@ -2,22 +2,36 @@
 layout: default
 ---
 
-<div class="py-5 container">
-  <div class="row rows-cols-lg-2">
+<div class="pt-5 pb-2 container">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
     <div class="col">
       <h1>{{ page.title }}</h1>
-        <h6>Author: {{ work.author }}</h6>
-    	</div>
-     	<div class="col">
-       <h4>{{ page.preview }}</h4>
+    </div>
+    
+    <div class="col pt-2">
+      <h5>{{ page.preview }}</h5>
     </div>
   </div>
 </div>
 
 <div class="py-5 container">
-  <div class="row">
+  <div class="row work">
     <div class="col">
-<img width="100%" src="{{ page.image }}">
-      </div>
+      <img width="100%" src="{{ page.image }}">
+    </div>
   </div>
+</div>
+
+<div class="container-fluid" style="background: {{ page.accent }}">
+  <div class="py-5 container" >
+    <div class="row work">
+      <div class="col">
+        <img width="100%" src="{{ page.image }}">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="light">
+  {% include related-grid.html %}
 </div>
