@@ -33,11 +33,10 @@ github_username:  dannypagano
 
 # Collections
 collections:
-  work:
+ work:
     output: true
-    permalink: /:collection/:title
-
-
+    permalink: /work/:title
+   
     
 
 # Front Matter Defaults
