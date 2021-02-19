@@ -7,7 +7,7 @@
           <div class="col mb-2">
             <div>
               <div class="ratio pb-3"  style="--aspect-ratio: 66%">
-                  {% for image in work.image %}<a href="{{ work.url }}"><img width="100%" src="{{ image.feature }}"></a>{% endfor %}
+                  <a href="{{ work.url }}"><img width="100%" {% for image in work.image %} src="{{ image.feature }}" {% endfor %}></a>
               </div>
               
               <div>
