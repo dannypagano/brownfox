@@ -1,3 +1,4 @@
+{% for video in page.video %}
 <div class="mt-5 py-5 container">
   <div class="row work">
     <div class="col">
@@ -7,3 +8,5 @@
     </div>
   </div>
 </div>
+{% else %}
+{% endfor %}
