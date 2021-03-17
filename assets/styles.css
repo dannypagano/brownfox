@@ -106,6 +106,7 @@ span.dot {
 }
 
 @media only screen and (max-width:576px) {
+
   nav a {
     font-size: 1.2rem;
   }
@@ -129,6 +130,10 @@ span.dot {
 
   #navcontainer {
     margin-top: 3px;
+  }
+
+  #navcol {
+    max-width: 33%;
   }
 
   footer a {
