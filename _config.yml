@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -36,8 +36,16 @@ collections:
  work:
     output: true
     permalink: /work/:title
-   
-    
+
+#srcset, sizes and dynamic media related
+image_url: /images
+default_width: '600'
+sizes: '(min-width: 1020px) 60vw, 90vw'
+
+srcset:
+  - 600
+  - 900
+  - 1200
 
 # Front Matter Defaults
 
@@ -48,8 +56,8 @@ collections:
 #     type: works
 #    values:
 #     author: Danny
-    
-  
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
