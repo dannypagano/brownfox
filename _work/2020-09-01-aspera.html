@@ -1,0 +1,115 @@
+---
+
+layout: work
+title: Aspera
+image:
+- src: asp1.jpg
+  alt: "Primary Logo"
+- src: asp2.jpg
+  alt: "Color Variations"
+- src: asp3.jpg
+  alt: "Mark Detail"
+- src: asp4.jpg
+  alt: "Mark Detail"
+- src: asp5.jpg
+  alt: "Business Card Mockup"
+categories:
+- category: Logo Design
+description: Logo design for a first of its kind NASA mission to study previously unseen galactic filaments in UV.
+
+---
+
+<!---
+{% include disclaimer.html %}
+----!>
+
+<div class="py-5 container">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="col">
+      <h1>{{ page.title }}</h1>
+      <div>
+          {% for item in page.categories %}
+              <h6 class="text-muted">{{ item.category }}</h6>
+          {% endfor %}
+      </div>
+    </div>
+
+    <div class="col pt-2">
+      {% include disclaimer.html %}
+      <h5 class="text-muted">{{ page.description }}</h5>
+    </div>
+  </div>
+</div>
+
+<div class="py-5 container">
+  <div class="row work">
+    <div class="col">
+      <div class="ratio" style="--aspect-ratio: 66%">
+        {% assign image = page.image[0] %}
+        {% include srcset.html %}
+      </div>
+      <h6 class="pt-2 text-muted">
+        {% assign image = page.image[0] %}
+        {{ image.alt }}
+      </h6>
+    </div>
+    </div>
+</div>
+
+<div class="py-5 container">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="col pb-3">
+      <div class="ratio" style="--aspect-ratio: 66%">
+        {% assign image = page.image[1] %}
+        {% include srcset.html %}
+
+      </div>
+      <h6 class="pt-2 text-muted">
+        {% assign image = page.image[1] %}
+        {{ image.alt }}
+      </h6>
+    </div>
+
+    <div class="col pb-3">
+       <div class="ratio" style="--aspect-ratio: 66%">
+         {% assign image = page.image[2] %}
+         {% include srcset.html %}
+
+      </div>
+      <h6 class="pt-2 text-muted">
+        {% assign image = page.image[2] %}
+        {{ image.alt }}
+      </h6>
+    </div>
+  </div>
+</div>
+
+<div class="py-5 container">
+  <div class="row work">
+    <div class="col">
+      <div class="ratio" style="--aspect-ratio: 66%">
+        {% assign image = page.image[3] %}
+        {% include srcset.html %}
+      </div>
+      <h6 class="pt-2 text-muted">
+        {% assign image = page.image[3] %}
+        {{ image.alt }}
+      </h6>
+    </div>
+  </div>
+</div>
+
+<div class="py-5 container">
+  <div class="row work">
+    <div class="col">
+      <div class="ratio" style="--aspect-ratio: 66%">
+        {% assign image = page.image[4] %}
+        {% include srcset.html %}
+      </div>
+      <h6 class="pt-2 text-muted">
+        {% assign image = page.image[4] %}
+        {{ image.alt }}
+      </h6>
+    </div>
+  </div>
+</div>
