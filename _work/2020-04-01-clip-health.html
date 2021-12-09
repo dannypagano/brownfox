@@ -3,27 +3,25 @@
 layout: work
 title: Clip Health
 image:
-- src: clp1.jpg
-  alt: "Packaging Mockup"
-- src: clp2.jpg
-  alt: "Reverse Wordmark"
-- src: clp3.jpg
-  alt: "Primary Workmark"
-- src: clp4.jpg
-  alt: "'C' Design Exploration"
-- src: clp5.jpg
-  alt: "'C' Design Exploration"
-- src: clp6.jpg
-  alt: "App Icon"
-- src: clp7.jpg
-  alt: "App Icon"
-- src: clp8.jpg
-  alt: "Color Pallete"
-- src: clp9.jpg
-  alt: "Product Naming Variations"
+- src: clp12.png
+- src: clp2.png
+- src: clp3.png
+- src: clp4.png
+- src: clp5.png
+- src: clp6.png
+- src: clp7.png
+- src: clp8.png
+- src: clp9.png
+- src: clp10.png
+- src: clp11.png
+- src: clp13.png
+video:
+- src: https://player.vimeo.com/video/653862628
+- src: https://player.vimeo.com/video/653864878
 categories:
-- category: Logo Design
-description: Visual identity for a cutting-edge Covid-19 diagnostic, made to work on an iPhone.
+- category: Identity Design
+- category: Web Design
+description: Visual identity and web design for a consumer health startup creating Covid19 testing products for home use.
 
 ---
 
@@ -116,6 +114,32 @@ description: Visual identity for a cutting-edge Covid-19 diagnostic, made to wor
 </div>
 
 <div class="py-5 container">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="col-sm-6 pb-3">
+      </div>
+<div class="col-sm-6 pb-3">
+  <h4>Clip Health is launching a home-use version of their EUA-authorized Covid19 test.</h4>
+  <h5 class="text-muted">Pairing consumable test kits, with a smartphone connected device, Clip Health hopes to offer a suite of home-use health tests for various ailments in addition to home testing for Covid19.</h5>
+</div>
+</div>
+</div>
+
+<div class="mt-5 py-5 container">
+  <div class="row work">
+    <div class="col">
+      <div class="ratio ratio-3x2 pb-3">
+        {% assign video = page.video[0] %}
+        {% include video-iframe.html %}
+
+      </div>
+      <h6 class="pt-2 text-muted">
+        {{ video.alt }}
+      </h6>
+    </div>
+  </div>
+</div>
+
+<div class="py-5 container">
   <div class="row work">
     <div class="col">
       <div class="ratio" style="--aspect-ratio: 66%">
@@ -128,6 +152,8 @@ description: Visual identity for a cutting-edge Covid-19 diagnostic, made to wor
     </div>
   </div>
 </div>
+
+
 
 <div class="py-5 container">
   <div class="row work">
@@ -161,11 +187,54 @@ description: Visual identity for a cutting-edge Covid-19 diagnostic, made to wor
   <div class="row work">
     <div class="col">
       <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[8] %}
+        {% assign image = page.image[9] %}
         {% include srcset.html %}
       </div>
       <h6 class="pt-2 text-muted">
         {{ image.alt }}
+      </h6>
+    </div>
+  </div>
+</div>
+
+<div class="py-5 container">
+  <div class="row work">
+    <div class="col">
+      <div class="ratio" style="--aspect-ratio: 66%">
+        {% assign image = page.image[10] %}
+        {% include srcset.html %}
+      </div>
+      <h6 class="pt-2 text-muted">
+        {{ image.alt }}
+      </h6>
+    </div>
+  </div>
+</div>
+
+<div class="py-5 container">
+  <div class="row work">
+    <div class="col">
+      <div class="ratio" style="--aspect-ratio: 66%">
+        {% assign image = page.image[11] %}
+        {% include srcset.html %}
+      </div>
+      <h6 class="pt-2 text-muted">
+        {{ image.alt }}
+      </h6>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 py-5 container">
+  <div class="row work">
+    <div class="col">
+      <div class="ratio ratio-3x2 pb-3">
+        {% assign video = page.video[1] %}
+        {% include video-iframe.html %}
+
+      </div>
+      <h6 class="pt-2 text-muted">
+        {{ video.alt }}
       </h6>
     </div>
   </div>

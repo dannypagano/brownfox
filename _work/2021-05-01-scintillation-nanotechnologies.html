@@ -1,30 +1,28 @@
 ---
-published: false
+published: true
 title: Scintillation Nanotechnologies
 layout: work
 image:
-- src: snt1.jpg
-  alt: "Scintillation Nanotechnologies logo on a gradient background"
-- src: snt2.jpg
-  alt: "Full Wordmark"
-- src: snt3.jpg
-  alt: "Condensed Intials Mark"
-- src: snt4.jpg
-  alt: "Wordmark construction detail showing ligatures."
-- src: snt5.jpg
-- src: snt6.jpg
-- src: snt7.jpg
-- src: snt8.jpg
-- src: snt9.jpg
-- src: snt10.jpg
-- src: snt11.jpg
-- src: snt12.jpg
+- src: snt4.png
+- src: snt1.png
+- src: snt3.png
+- src: snt2.png
+- src: snt5.png
+- src: snt6.png
+- src: snt7.png
+- src: snt8.png
+- src: snt9.png
+- src: snt10.png
+- src: snt11.png
+- src: snt12.png
+video:
+- src: https://player.vimeo.com/video/652261296
 categories:
 - category: Identity Design
-description: Identity design for a biotechnology startup empowering new insights in biological research.
+description: Identity design for a life sciences startup empowering new, unseen insights in biological research.
 
 ---
-<div class="pt-5 pb-2 container">
+<div class="pt-5 pb-3 container">
   <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
 
     <div class="col">
@@ -99,11 +97,51 @@ description: Identity design for a biotechnology startup empowering new insights
   </div>
 </div>
 
+<div class="mt-5 py-5 container">
+  <div class="row work">
+    <div class="col">
+      <div class="ratio ratio-3x2 pb-3">
+        {% assign video = page.video[0] %}
+        {% include video-iframe.html %}
+
+      </div>
+      <h6 class="pt-2 text-muted">
+        {{ video.alt }}
+      </h6>
+    </div>
+  </div>
+</div>
+
 <div class="py-5 container">
   <div class="row work">
     <div class="col">
       <div class="ratio" style="--aspect-ratio: 66%">
         {% assign image = page.image[4] %}
+        {% include srcset.html %}
+      </div>
+      <h6 class="pt-2 text-muted">
+        {{ image.alt }}
+      </h6>
+      </div>
+    </div>
+</div>
+
+<div class="py-5 container">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="col-sm-6 pb-3">
+      </div>
+<div class="col-sm-6 pb-3">
+  <h4>Scintillation Nanotechnologies is a University of Arizona-born startup, engineering next generation detection of radiolabelled compounds. </h4>
+  <h5 class="text-muted">Their proprietary nanoparticles offer unique benefits over tradtional SPA beads and other radioisotope detection technologies.</h5>
+</div>
+</div>
+</div>
+
+<div class="py-5 container">
+  <div class="row work">
+    <div class="col">
+      <div class="ratio" style="--aspect-ratio: 66%">
+        {% assign image = page.image[10] %}
         {% include srcset.html %}
       </div>
       <h6 class="pt-2 text-muted">
@@ -152,6 +190,17 @@ description: Identity design for a biotechnology startup empowering new insights
 </div>
 
 <div class="py-5 container">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="col-sm-6 pb-3">
+      </div>
+<div class="col-sm-6 pb-3">
+  <h4>To describe their various product features we designed a series of unique icons.</h4>
+  <h5 class="text-muted">The 5x7 grid was inspired by both the sphere shape of the nanoparticles, but also the grid of well-plate wells used in many life science applications.</h5>
+</div>
+</div>
+</div>
+
+<div class="py-5 container">
   <div class="row work">
     <div class="col">
       <div class="ratio" style="--aspect-ratio: 66%">
@@ -171,30 +220,6 @@ description: Identity design for a biotechnology startup empowering new insights
       <div class="ratio" style="--aspect-ratio: 66%">
         {% assign image = page.image[9] %}
         {% include srcset.html %}
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-    </div>
-  </div>
-</div>
-
-<div class="py-5 container">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-    <div class="col pb-3">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[10] %}
-        {% include srcset.html %}
-      </div>
-      <h6 class="pt-2 text-muted">
-         {{ image.alt }}
-      </h6>
-    </div>
-
-    <div class="col pb-3">
-       <div class="ratio" style="--aspect-ratio: 66%">
-         {% assign image = page.image[11] %}
-         {% include srcset.html %}
       </div>
       <h6 class="pt-2 text-muted">
         {{ image.alt }}
