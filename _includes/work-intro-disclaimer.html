@@ -7,11 +7,11 @@
           {% for item in page.categories %}
               <h6 class="text-muted">{{ item.category }}</h6>
           {% endfor %}
-
       </div>
     </div>
 
     <div class="col pt-2">
+      {% include disclaimer.html %}
       <h5 class="text-muted">{{ page.description }}</h5>
 
     </div>

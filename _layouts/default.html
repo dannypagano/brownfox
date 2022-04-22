@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Update These -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -21,6 +21,9 @@
     <!-- Custom CSS -->
     <link href="/assets/styles.css" rel="stylesheet">
 
+    <!-- CSS Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Google Analytics -->
     {% include analytics.html %}
 
@@ -33,12 +36,12 @@
  <title>{{ site.title }} · {{ page.title }}</title>
 
 </head>
-  <body>
+  <body class="animate__animated animate__fadeIn">
+    {% include header.html %}
     <main class="py-3" id="container-fluid">
-     {% include header.html %}
      {{ content }}
-     {% include footer.html %}
     </main>
+    {% include footer-new.html %}
   </body>
 
 </html>
