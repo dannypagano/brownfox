@@ -36,6 +36,7 @@ collections:
     output: true
     permalink: /work/:title
 
+
 #srcset, sizes and dynamic media related
 image_url: /images
 default_width: '600'
@@ -49,13 +50,11 @@ srcset:
 # Front Matter Defaults
 
 #defaults:
-# -
-#   scope:
+#  - scope:
 #     path: ""
-#     type: works
+#     type: posts
 #    values:
-#     author: Danny
-
+#     category: none
 
 
 # Exclude from processing.

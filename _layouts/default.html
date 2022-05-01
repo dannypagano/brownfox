@@ -37,11 +37,18 @@
 
 </head>
   <body class="animate__animated animate__fadeIn">
+    {% if page.hero and page.hero.size != 0 %}
+    <div class="hero-header" style="background-image: url('{{ page.hero }}');"></div>
     {% include header.html %}
-    <main class="py-3" id="container-fluid">
+    {% elsif page.color and page.color.size != 0 %}
+    <div class="hero-header-color" style="background-color: {{ page.color }};"></div>
+    {% include header.html %}
+    {% else %}
+    {% include header.html %}
+    {% endif %}
+    <main class="py-3 container-fluid">
      {{ content }}
     </main>
-    {% include footer-new.html %}
+    {% include footer.html %}
   </body>
-
 </html>

@@ -1,0 +1,78 @@
+---
+title: Whiskey Del Bac
+layout: newwork
+hero: /images/1300w/wdb1.jpg
+image:
+- src: wdb1.jpg
+- src: snt1.png
+- src: snt3.png
+- src: snt2.png
+- src: snt5.png
+- src: snt6.png
+- src: snt7.png
+- src: snt8.png
+- src: snt9.png
+- src: snt10.png
+- src: snt11.png
+- src: snt12.png
+description: Updating labels and creating a consistent brand presence for a family owned and operated whiskey distillery in Tucson, Arizona.
+video:
+- src: https://player.vimeo.com/video/652261296
+credit: yes
+deliverables: [Packaging Design]
+roles: [Designer, Account Manager]
+---
+
+{% assign image = page.image[0] %}
+  <div class="py-2 container-fluid">
+    <div class="row work">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+        </div>
+      </div>
+  </div>
+
+{% assign image = page.image[1] %}
+  <div class="py-2 container-fluid">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+
+          {% include srcset.html %}
+        </div>
+         <h6 class="pt-2 text-muted">
+           {{ image.alt }}
+         </h6>
+      </div>
+
+{% assign image = page.image[2] %}
+      <div class="col pb-2">
+         <div class="ratio" style="--aspect-ratio: 66%">
+
+           {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-2 container-fluid">
+    <div class="row work">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[3] %}
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+      </div>
+    </div>
+  </div>

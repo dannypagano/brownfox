@@ -1,4 +1,5 @@
-<div class="py-5 container-fluid work-grid">
+<div>
+  <div class="py-5 container-fluid work-grid">
   <div class="container-fluid">
       <h4 class="mx-2 py-5">Recent Projects</h4>
   </div>
@@ -20,7 +21,7 @@
 
               <div>
                 <a href="{{ work.url }}"><h5>{{ work.title }}</h5></a>
-                <p class="text-muted">{{ work.description | truncate: 120 }}</p>
+                <p >{{ work.description | truncate: 120 }}</p>
               </div>
             </div>
           </div>
@@ -34,5 +35,6 @@
   <div class="container-fluid">
     <h5 class="mx-2 py-5 text-muted"><a href="/">All Projects <span class="arrow">→</span></a></h5>
   </div>
+</div>
 
 </div>

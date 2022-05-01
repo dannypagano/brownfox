@@ -83,30 +83,30 @@ License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
 body {
 	background-color: black;
   color: white ;
-  font-family: "Alliance-Light";
-	--animate-duration: 0.5s;
+  font-family: "Alliance-Regular";
+	--animate-duration: 1s;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3 {
     font-family: "Alliance-SemiBold";
 }
 
 h5 {
   font-family: "Alliance-Light";
-  line-height: 1.7rem;
+  line-height: 2rem;
+	font-size: 1.5rem;
 }
 
-.about h5 {
-  font-size: 1.5rem;
-  line-height: 1.9rem;
-}
-
-p a {
-  font-family: "Alliance-Light";
-}
 
 h6 {
-  font-family: "Generisch-Regular" !important;
+  font-family: "Generisch-Regular";
+	font-size: 1.2rem;
+}
+
+p {
+  font-family: "Alliance-Regular";
+	font-size: 1.2rem;
+	color: #6c757d;
 }
 
 
@@ -123,15 +123,27 @@ a:hover {
 .link {
   text-decoration: underline;
 }
-
+nav ul {
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+}
 nav a {
   font-size: 1.5rem;
+	padding-left: 1rem;
 }
 
-nav a:nth-child(2) {
-    padding-left: 1rem;
+nav a first:child {
+	padding-left: 0px;
 }
 
+#logo {
+	max-width: 250px;
+	margin-top: -2px;
+}
+
+/*
 span.dot {
   color: #000;
   background-color: #fff;
@@ -144,9 +156,16 @@ span.dot {
   text-align: center;
   letter-spacing: -1px;
 }
+*/
 
-p {
-  font-family: "Alliance-Regular";
+#navigation-bar {
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+}
+
+.page-wrapper {
+	margin-top: 200px;
 }
 
 .light {
@@ -169,7 +188,6 @@ p {
 
 #logo a:hover {
 	opacity: .8;
-	color: #fff;
 }
 
 .error {
@@ -179,6 +197,53 @@ p {
 .error-container {
 	height: 100%;
 }
+
+.link {
+	color: #fff;
+}
+
+.category-pill {
+		padding: 5px 10px;
+		color: black;
+		background-color: white;
+		font-size: .9rem;
+}
+
+.category-pill.design {
+	color: #fff;
+	background-color: #7325FA;
+
+}
+
+.category-pill.technology {
+	color: #000;
+	background-color:#43FF4C;
+}
+
+.category-pill.general {
+	color: #fff;
+	background-color: #FA1350;
+}
+
+.category-pill.learning {
+	color: #000;
+	background-color: #00E3FD;
+}
+
+.post-date {
+	font-size: 0.9rem;
+}
+.post-category {
+	vertical-align: middle;
+}
+
+.post-title {
+	font-weight: "Alliance-Light"
+}
+hr {
+	border: 1px solid #ADBAC8;
+}
+
 /*
 #disclaimer {
 
@@ -200,6 +265,38 @@ img {
 	--aspect-ratio: calc(2/3 * 100%);
 }
 
+.hero-header {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+	background-size: cover;
+	height: 50vh;
+	background-position: center;
+	opacity: .9;
+}
+
+.hero-header-color {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+	height: 33vh;
+}
+
+.hero-intro {
+}
+
+/*
+.hero-intro-spacer {
+	height: 35vh;
+}
+*/
+
+.footer-container {
+	bottom: 0px;
+}
+
 @media only screen and (max-width:576px) {
 
 	.error {
@@ -211,17 +308,18 @@ img {
     margin-right: .75rem;
   }
 
-  .row {
+
+  .container-fluid {
     --bs-gutter-x: 0rem;
   }
 
-  nav a {
-    font-size: 1rem;
-  }
+	#navcontainer {
+		text-align: right;
+	}
 
-  nav a:nth-child(2) {
-      padding-left: .5rem;
-  }
+ #navcontainer li a {
+	 margin: .5rem 10px .5rem 0px;
+ }
 
   #logo {
     font-size: 1.25rem;
@@ -231,6 +329,7 @@ img {
     max-width: 33%;
   }
 
+/*
   span.dot {
     color: #000;
     background-color: #fff;
@@ -243,16 +342,27 @@ img {
     text-align: center;
     letter-spacing: -1px;
   }
+*/
+
+	h2.intro  {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		font-family: "Alliance-Light";
+	}
+
+/*
+
+	.hero-intro-spacer {
+		height: 10vh;
+	}
+
 
   #navcontainer {
     margin-top: 6px;
   }
+*/
 
   footer a {
     font-size: 1rem;
-  }
-
-  #footercontainer {
-    margin-top: 6px;
   }
 }
