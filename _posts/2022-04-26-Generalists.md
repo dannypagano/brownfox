@@ -2,7 +2,7 @@
 
 layout: post
 hero:
-color: '#00E3FD'
+color: '#7235F4'
 title: The Case for Design Generalists
 tags: [design, general]
 slug:

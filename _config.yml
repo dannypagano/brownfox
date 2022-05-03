@@ -52,12 +52,12 @@ srcset:
 
 # Front Matter Defaults
 
-#defaults:
-#  - scope:
-#     path: ""
-#     type: posts
-#    values:
-#     category: none
+defaults:
+  - scope:
+     path: ""
+     type: posts
+    values:
+     is_post: true
 
 
 # Exclude from processing.

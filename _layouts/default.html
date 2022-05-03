@@ -36,7 +36,7 @@
  <title>{{ site.title }} · {{ page.title }}</title>
 
 </head>
-  <body class="animate__animated animate__fadeIn">
+  <body class="animate__animated animate__fadeIn" {% if page.is_post == true %} style="background-color: white;" {% else %} style="background-color: black;"{% endif %}>
     {% if page.hero and page.hero.size != 0 %}
     <div class="hero-header" style="background-color: {{ page.color }}; background-image: url('{{ page.hero }}');"></div>
     {% include header.html %}
@@ -46,9 +46,15 @@
     {% else %}
     {% include header.html %}
     {% endif %}
+    {% if page.is_post == true %}
+    <main class="py-3 container-fluid light">
+     {{ content }}
+    </main>
+    {% else %}
     <main class="py-3 container-fluid">
      {{ content }}
     </main>
+    {% endif %}
     {% include footer.html %}
   </body>
 </html>
