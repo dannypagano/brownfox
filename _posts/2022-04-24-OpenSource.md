@@ -2,7 +2,7 @@
 
 layout: post
 hero:
-color: '#4E57F7'
+color: '#7235F4'
 title: Open Source is so Important
 tags: [design, technology]
 slug:

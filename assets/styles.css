@@ -80,11 +80,81 @@ License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
 	font-weight: normal;
 	font-style: normal;
 }
+
+
+
+
+
+
+/* styles to set narrow page width to 1920px */
+main {
+	max-width: 1920px;
+}
+
+#navigation-bar {
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+	z-index: 10;
+	right: 0px;
+	left: 0px;
+	max-width: 1920px;
+}
+
+#footer-container {
+	max-width: 1920px;
+}
+
+nav ul {
+	list-style: none;
+	margin-right: 2rem;
+}
+
+#logo {
+	margin-left: 1rem;
+}
+
+/* end of styles to narrow overall page width to 1920px*/
+
+/* styles to set overall page width to 100% *
+
+
+main {
+	max-width: 100%;
+}
+
+#navigation-bar {
+
+	margin-left: 12px;
+	margin-right: 12px;
+	max-width: 100%;
+}
+
+#footer-container {
+	bottom: 0px;
+	position: static;
+	left: 0px;
+	right: 0px;
+	max-width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin-right: 1rem;
+}
+
+#logo {
+	margin-left: 0rem;
+}
+
+/* end of styles to set overall page width to 100% */
+
 body {
 	background-color: black;
   color: white ;
   font-family: "Alliance-Regular";
 	--animate-duration: 1s;
+
 }
 
 h1, h2, h3 {
@@ -127,6 +197,7 @@ a:hover {
 .link {
   text-decoration: underline;
 }
+
 nav ul {
 	list-style: none;
 }
@@ -147,11 +218,6 @@ nav a first:child {
 	margin-top: -2px;
 }
 
-#navigation-bar {
-	position: absolute;
-	z-index: 10;
-	top: 0px;
-}
 
 .page-wrapper {
 	margin-top: 200px;
@@ -262,9 +328,7 @@ img {
 }
 
 
-.footer-container {
-	bottom: 0px;
-}
+
 
 #post-column {
 	max-width: 730px;
@@ -288,13 +352,18 @@ img {
 	 margin: .5rem 10px .5rem 0px;
  }
 
-  #logo {
-    font-size: 1.25rem;
-  }
+ #logo {
+	 margin-left: 0.5rem;
+ }
 
   .navcol {
     max-width: 33%;
   }
+
+	nav ul {
+		list-style: none;
+		margin-right: 1rem;
+	}
 
 	h2.intro  {
 		font-size: 1.5rem;
