@@ -1,11 +1,11 @@
 ---
 title: Whiskey Del Bac
-layout: newwork
-hero: /images/1300w/wdb1.jpg
+layout: work
+hero: /images/1300w/newbottles.jpg
 image:
-- src: wdb1.jpg
-- src: snt1.png
-- src: snt3.png
+- src: newbottles.jpg
+- src: interimbottles.jpg
+- src: oldbottles.jpg
 - src: snt2.png
 - src: snt5.png
 - src: snt6.png
@@ -24,8 +24,8 @@ roles: [Designer, Account Manager]
 ---
 
 {% assign image = page.image[0] %}
-  <div class="py-2 container-fluid">
-    <div class="row work">
+  <div class="py-2 ">
+    <div class="row ">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% include srcset.html %}
@@ -38,11 +38,10 @@ roles: [Designer, Account Manager]
   </div>
 
 {% assign image = page.image[1] %}
-  <div class="py-2 container-fluid">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+  <div class="py-2 ">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 ">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
-
           {% include srcset.html %}
         </div>
          <h6 class="pt-2 text-muted">
@@ -63,8 +62,8 @@ roles: [Designer, Account Manager]
     </div>
   </div>
 
-  <div class="py-2 container-fluid">
-    <div class="row work">
+  <div class="py-2 ">
+    <div class="row ">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[3] %}

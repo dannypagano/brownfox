@@ -91,6 +91,10 @@ h1, h2, h3 {
     font-family: "Alliance-SemiBold";
 }
 
+h2 {
+	font-size: 1.75rem;
+}
+
 h5 {
   font-family: "Alliance-Light";
   line-height: 2rem;
@@ -143,21 +147,6 @@ nav a first:child {
 	margin-top: -2px;
 }
 
-/*
-span.dot {
-  color: #000;
-  background-color: #fff;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  height: 16px;
-  min-width: 14px;
-  padding: 0px 6px 8px 5px;
-  text-align: center;
-  letter-spacing: -1px;
-}
-*/
-
 #navigation-bar {
 	position: absolute;
 	z-index: 10;
@@ -202,30 +191,30 @@ span.dot {
 	color: #fff;
 }
 
-.category-pill {
+.tag-pill {
 		padding: 5px 10px;
 		color: black;
 		background-color: white;
 		font-size: .9rem;
 }
 
-.category-pill.design {
+.tag-pill.design {
 	color: #fff;
 	background-color: #7325FA;
 
 }
 
-.category-pill.technology {
+.tag-pill.technology {
 	color: #000;
 	background-color:#43FF4C;
 }
 
-.category-pill.general {
+.tag-pill.general {
 	color: #fff;
 	background-color: #FA1350;
 }
 
-.category-pill.learning {
+.tag-pill.learning {
 	color: #000;
 	background-color: #00E3FD;
 }
@@ -233,7 +222,7 @@ span.dot {
 .post-date {
 	font-size: 0.9rem;
 }
-.post-category {
+.post-tag {
 	vertical-align: middle;
 }
 
@@ -243,18 +232,6 @@ span.dot {
 hr {
 	border: 1px solid #ADBAC8;
 }
-
-/*
-#disclaimer {
-
-  position: absolute;
-  margin-left: -160px;
-  top: 800px;
-  color: red;
-  z-index: 100;
-  transform: rotate(90deg);
-}
-*/
 
 img {
     max-width: 100%;
@@ -273,7 +250,7 @@ img {
 	background-size: cover;
 	height: 50vh;
 	background-position: center;
-	opacity: .9;
+	opacity: .75;
 }
 
 .hero-header-color {
@@ -284,17 +261,13 @@ img {
 	height: 33vh;
 }
 
-.hero-intro {
-}
-
-/*
-.hero-intro-spacer {
-	height: 35vh;
-}
-*/
 
 .footer-container {
 	bottom: 0px;
+}
+
+#post-column {
+	max-width: 730px;
 }
 
 @media only screen and (max-width:576px) {
@@ -303,14 +276,8 @@ img {
 		font-size: 15rem;
 	}
 
-  .work {
-    margin-left: .75rem;
-    margin-right: .75rem;
-  }
-
-
-  .container-fluid {
-    --bs-gutter-x: 0rem;
+  .row {
+    --bs-gutter-x: .5rem;
   }
 
 	#navcontainer {
@@ -329,38 +296,12 @@ img {
     max-width: 33%;
   }
 
-/*
-  span.dot {
-    color: #000;
-    background-color: #fff;
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    height: 16px;
-    min-width: 14px;
-    padding: 0px 5px 7px 4px;
-    text-align: center;
-    letter-spacing: -1px;
-  }
-*/
-
 	h2.intro  {
 		font-size: 1.5rem;
 		line-height: 2rem;
 		font-family: "Alliance-Light";
 	}
 
-/*
-
-	.hero-intro-spacer {
-		height: 10vh;
-	}
-
-
-  #navcontainer {
-    margin-top: 6px;
-  }
-*/
 
   footer a {
     font-size: 1rem;

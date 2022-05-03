@@ -13,7 +13,7 @@
     <meta name="author" content="Danny Pagano">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -38,7 +38,7 @@
 </head>
   <body class="animate__animated animate__fadeIn">
     {% if page.hero and page.hero.size != 0 %}
-    <div class="hero-header" style="background-image: url('{{ page.hero }}');"></div>
+    <div class="hero-header" style="background-color: {{ page.color }}; background-image: url('{{ page.hero }}');"></div>
     {% include header.html %}
     {% elsif page.color and page.color.size != 0 %}
     <div class="hero-header-color" style="background-color: {{ page.color }};"></div>

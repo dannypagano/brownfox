@@ -24,188 +24,192 @@ categories:
 description: Identity design for a life sciences startup empowering new, unseen insights in biological research.
 
 ---
-{% include work-intro-disclaimer.html %}
-
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[0] %}
-        {% include srcset.html %}
+{% assign image = page.image[0] %}
+  <div class="py-2">
+    <div class="row work">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+        </div>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-      </div>
-    </div>
-</div>
+  </div>
 
+{% assign image = page.image[1] %}
+  <div class="py-2">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
 
-<div class="py-5 container">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-    <div class="col pb-3">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[1] %}
-        {% include srcset.html %}
+          {% include srcset.html %}
+        </div>
+         <h6 class="pt-2 text-muted">
+           {{ image.alt }}
+         </h6>
       </div>
-       <h6 class="pt-2 text-muted">
-         {{ image.alt }}
-       </h6>
-    </div>
 
-    <div class="col pb-3">
-       <div class="ratio" style="--aspect-ratio: 66%">
-         {% assign image = page.image[2] %}
-         {% include srcset.html %}
+{% assign image = page.image[2] %}
+      <div class="col pb-2">
+         <div class="ratio" style="--aspect-ratio: 66%">
+
+           {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[3] %}
-        {% include srcset.html %}
+  <div class="py-2">
+    <div class="row work">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[3] %}
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="mt-5 py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio ratio-3x2 pb-3">
-        {% assign video = page.video[0] %}
-        {% include video-iframe.html %}
+  <div class="py-2">
+    <div class="row work">
+      <div class="col pb-2">
+        <div class="ratio ratio-3x2 pb-2">
+          {% assign video = page.video[0] %}
+          {% include video-iframe.html %}
 
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ video.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ video.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[4] %}
-        {% include srcset.html %}
+  <div class="py-2">
+    <div class="row work">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[4] %}
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+        </div>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-      </div>
-    </div>
-</div>
+  </div>
 
-<div class="py-5 container">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-    <div class="col-sm-6 pb-3">
-      </div>
-<div class="col-sm-6 pb-3">
-  <h4>Scintillation Nanotechnologies is a University of Arizona-born startup, engineering next generation detection of radiolabelled compounds. </h4>
-  <h5 >Their proprietary nanoparticles offer unique benefits over tradtional SPA beads and other radioisotope detection technologies.</h5>
-</div>
-</div>
-</div>
+  <div class="py-5">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
 
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[10] %}
-        {% include srcset.html %}
+      <div class="col-sm-6 col-lg-6 pb-3">
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
+      <div class="col-sm-6 col-lg-6 pb-3">
+        <div class="col col-sm-12 col-md-6 col-lg-6 pb-5 float-end">
+        <hr></hr>
+        <h5>Work Text Title Goes Here</h5>
+        <p>Text content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor. Egestas purus viverra accumsan in nisl nisi scelerisque</p>
+      </div>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="py-5 container">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-    <div class="col pb-3">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[5] %}
-        {% include srcset.html %}
-      </div>
-       <h6 class="pt-2 text-muted">
-         {{ image.alt }}
-       </h6>
-    </div>
 
-    <div class="col pb-3">
-       <div class="ratio" style="--aspect-ratio: 66%">
-         {% assign image = page.image[6] %}
-         {% include srcset.html %}
+  <div class="py-2">
+    <div class="row work">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[10] %}
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[7] %}
-        {% include srcset.html %}
+  <div class="py-2">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[5] %}
+          {% include srcset.html %}
+        </div>
+         <h6 class="pt-2 text-muted">
+           {{ image.alt }}
+         </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
+
+      <div class="col pb-2">
+         <div class="ratio" style="--aspect-ratio: 66%">
+           {% assign image = page.image[6] %}
+           {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="py-5 container">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-    <div class="col-sm-6 pb-3">
+  <div class="py-2">
+    <div class="row work">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[7] %}
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-<div class="col-sm-6 pb-3">
-  <h4>To describe their various product features we designed a series of unique icons.</h4>
-  <h5 >The 5x7 grid was inspired by both the sphere shape of the nanoparticles, but also the grid of well-plate wells used in many life science applications.</h5>
-</div>
-</div>
-</div>
-
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[8] %}
-        {% include srcset.html %}
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[9] %}
-        {% include srcset.html %}
+  <div class="py-2">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+      <div class="col-sm-6 pb-3">
+        </div>
+  <div class="col-sm-6 pb-3">
+    <h4>To describe their various product features we designed a series of unique icons.</h4>
+    <h5 >The 5x7 grid was inspired by both the sphere shape of the nanoparticles, but also the grid of well-plate wells used in many life science applications.</h5>
+  </div>
+  </div>
+  </div>
+
+  <div class="py-2">
+    <div class="row work">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[8] %}
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
+
+  <div class="py-2">
+    <div class="row work">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[9] %}
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+      </div>
+    </div>
+  </div>

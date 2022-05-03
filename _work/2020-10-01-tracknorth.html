@@ -2,6 +2,8 @@
 
 title: Track North
 layout: work
+hero:
+color: '#EE6345'
 image:
 - src: trk5.png
 - src: trk2.jpg
@@ -17,99 +19,57 @@ description: Identity design for a rail services conglomerate serving the northe
 
 ---
 
-{% include work-intro-disclaimer.html %}
 
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[0] %}
-        {% include srcset.html %}
+  <div class="py-2">
+    <div class="row ">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[0] %}
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+        </div>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
+  </div>
+
+
+  <div class="py-2">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 ">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[1] %}
+          {% include srcset.html %}
+        </div>
+         <h6 class="pt-2 text-muted">
+           {{ image.alt }}
+         </h6>
       </div>
-    </div>
-</div>
 
-<div class="py-5 container">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-    <div class="col pb-3">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[1] %}
-        {% include srcset.html %}
 
+      <div class="col pb-2">
+         <div class="ratio" style="--aspect-ratio: 66%">
+{% assign image = page.image[2] %}
+           {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-    </div>
-
-    <div class="col pb-3">
-       <div class="ratio" style="--aspect-ratio: 66%">
-         {% assign image = page.image[2] %}
-         {% include srcset.html %}
-
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[3] %}
-        {% include srcset.html %}
+  <div class="py-2">
+    <div class="row ">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[3] %}
+          {% include srcset.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-      </div>
-    </div>
-</div>
-
-
-<div class="py-5 container">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-    <div class="col pb-3">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[5] %}
-        {% include srcset.html %}
-
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-    </div>
-
-    <div class="col pb-3">
-       <div class="ratio" style="--aspect-ratio: 66%">
-         {% assign image = page.image[6] %}
-         {% include srcset.html %}
-
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
-
-<div class="py-5 container">
-  <div class="row work">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[7] %}
-        {% include srcset.html %}
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-      </div>
-    </div>
-</div>

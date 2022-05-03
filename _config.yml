@@ -35,6 +35,9 @@ collections:
  work:
     output: true
     permalink: /work/:title
+ posts:
+    output: true
+    permalink: /posts/:year/:month/:day/:title/
 
 
 #srcset, sizes and dynamic media related
