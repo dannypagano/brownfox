@@ -43,12 +43,13 @@ collections:
 #srcset, sizes and dynamic media related
 image_url: /images
 default_width: '600'
-sizes: '(min-width: 900px) 90vw, (min-width: 991px) 900px, (min-width: 1399px) 1300px'
+sizes: '(min-width: 900px) 90vw, (min-width: 991px) 900px, (min-width: 1399px) 1300px, (min-width: 2000px) 1920px,'
 
 srcset:
   - 600
   - 900
   - 1300
+  - 1920
 
 # Front Matter Defaults
 

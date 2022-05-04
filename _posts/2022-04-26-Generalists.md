@@ -2,12 +2,12 @@
 
 layout: post
 hero:
-color: '#7235F4'
+color: '#EFCC56'
 title: The Case for Design Generalists
 tags: [design, general]
 slug:
 description:
-excerpt:
+excerpt: This is an excerpt, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Penatibus et magnis dis parturient montes nascetur.
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Penatibus et magnis dis parturient montes nascetur. Lobortis scelerisque fermentum dui faucibus in ornare quam. Senectus et netus et malesuada. Sapien eget mi proin sed libero enim sed faucibus turpis. Sed libero enim sed faucibus. In nulla posuere sollicitudin aliquam ultrices sagittis orci. Id velit ut tortor pretium viverra suspendisse potenti. Facilisis gravida neque convallis a. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Tempor commodo ullamcorper a lacus vestibulum. Faucibus et molestie ac feugiat sed lectus vestibulum. Urna condimentum mattis pellentesque id nibh tortor. Quis blandit turpis cursus in. Ullamcorper malesuada proin libero nunc consequat interdum varius. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum.
 

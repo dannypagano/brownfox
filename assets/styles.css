@@ -152,13 +152,13 @@ nav ul {
 body {
 	background-color: black;
   color: white ;
-  font-family: "Alliance-Regular";
+  font-family: "Alliance-Regular", Helvetica, Arial, sans-serif;
 	--animate-duration: 1s;
 
 }
 
 h1, h2, h3 {
-    font-family: "Alliance-SemiBold";
+    font-family: "Alliance-SemiBold", Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -166,19 +166,22 @@ h2 {
 }
 
 h5 {
-  font-family: "Alliance-Light";
+  font-family: "Alliance-Light", Helvetica, Arial, sans-serif;
   line-height: 2rem;
 	font-size: 1.5rem;
 }
 
+#post-column h5 {
+	font-family: "Alliance-Regular", Helvetica, Arial, sans-serif;
+}
 
 h6 {
-  font-family: "Generisch-Regular";
+  font-family: "Generisch-Regular", Helvetica, Arial, sans-serif;
 	font-size: 1.2rem;
 }
 
 p {
-  font-family: "Alliance-Regular";
+  font-family: "Alliance-Regular", Helvetica, Arial, sans-serif;
 	font-size: 1.2rem;
 	color: #6c757d;
 }
@@ -218,6 +221,9 @@ nav a first:child {
 	margin-top: -2px;
 }
 
+#intro-block h3 {
+	font-family: "Alliance-Regular", Helvetica, Arial, sans-serif;
+}
 
 .page-wrapper {
 	margin-top: 200px;
@@ -259,30 +265,25 @@ nav a first:child {
 
 .tag-pill {
 		padding: 5px 10px;
-		color: black;
-		background-color: white;
+		color: rgba(0,0,0,.75);
 		font-size: .9rem;
 }
 
 .tag-pill.design {
-	color: #fff;
-	background-color: #7325FA;
+	background-color: #EFCC56;
 
 }
 
 .tag-pill.technology {
-	color: #000;
-	background-color:#43FF4C;
+	background-color:#3EB78B;
 }
 
 .tag-pill.general {
-	color: #fff;
-	background-color: #FA1350;
+	background-color: #B95E7C;
 }
 
 .tag-pill.learning {
-	color: #000;
-	background-color: #00E3FD;
+	background-color: #5A76E8;
 }
 
 .post-date {
@@ -293,8 +294,10 @@ nav a first:child {
 }
 
 .post-title {
-	font-weight: "Alliance-Light"
+	font-weight: "Alliance-Regular", Helvetica, Arial, sans-serif;
 }
+
+
 hr {
 	border: 1px solid #ADBAC8;
 }
@@ -368,7 +371,7 @@ img {
 	h2.intro  {
 		font-size: 1.5rem;
 		line-height: 2rem;
-		font-family: "Alliance-Light";
+		font-family: "Alliance-Light", Helvetica, Arial, sans-serif;
 	}
 
 
