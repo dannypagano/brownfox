@@ -6,14 +6,14 @@
           <div class="col mb-2 animate__animated animate__fadeIn">
             <div>
               <div class="ratio pb-3"  style="--aspect-ratio: 66%">
-                  <a href="{{ work.url }}">
+                  <a href="{{ work.url }}" title="{{ work.title }}">
                     {% assign image = work.image[0] %}
-                    {% include srcset.html %}
+                    {% include responsive-images-grid.html %}
                   </a>
               </div>
 
               <div class="pb-5">
-                <a href="{{ work.url }}"><h5>{{ work.title }}</h5></a>
+                <a href="{{ work.url }}" title="{{ work.title}}"><h5>{{ work.title }}</h5></a>
                 <p >{{ work.description | truncate: 120 }}</p>
               </div>
             </div>

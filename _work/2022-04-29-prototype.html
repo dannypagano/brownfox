@@ -16,20 +16,19 @@ image:
 - src: snt10.png
 - src: snt11.png
 - src: snt12.png
-description: Identity design for a life sciences startup empowering new, unseen insights in biological research. To revolutionize the sensitivity, selectivity, and resolution of chemical and biological assays through constant innovation in nanoscale radioisotope detectors, enabling breakthrough discoveries in biological, chemical, and environmental systems.
-video:
-- src: https://player.vimeo.com/video/652261296
+description: Selected logos and marks, some used, some unused.
 credit: yes
-deliverables: [Identity, Web Design, Photography]
-roles: [Designer, Photographer, Developer, Account Manager]
+deliverables: [Identity]
+roles: [Designer]
+published: false
 ---
 
 {% assign image = page.image[0] %}
   <div class="py-2">
-    <div class="row work">
+    <div class="row  ">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -38,24 +37,22 @@ roles: [Designer, Photographer, Developer, Account Manager]
       </div>
   </div>
 
-{% assign image = page.image[1] %}
+
   <div class="py-2">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2  ">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
-
-          {% include srcset.html %}
+          {% assign image = page.image[1] %}
+          {% include responsive-images-half.html %}
         </div>
          <h6 class="pt-2 text-muted">
            {{ image.alt }}
          </h6>
       </div>
-
-{% assign image = page.image[2] %}
       <div class="col pb-2">
          <div class="ratio" style="--aspect-ratio: 66%">
-
-           {% include srcset.html %}
+           {% assign image = page.image[2] %}
+           {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -65,7 +62,7 @@ roles: [Designer, Photographer, Developer, Account Manager]
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[3] %}
@@ -79,12 +76,11 @@ roles: [Designer, Photographer, Developer, Account Manager]
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row  ">
       <div class="col pb-2">
         <div class="ratio ratio-3x2 pb-2">
           {% assign video = page.video[0] %}
           {% include video-iframe.html %}
-
         </div>
         <h6 class="pt-2 text-muted">
           {{ video.alt }}
@@ -94,7 +90,7 @@ roles: [Designer, Photographer, Developer, Account Manager]
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row  ">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[4] %}
@@ -108,8 +104,7 @@ roles: [Designer, Photographer, Developer, Account Manager]
   </div>
 
   <div class="py-5">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2  ">
       <div class="col-sm-6 col-lg-6 pb-3">
       </div>
       <div class="col-sm-6 col-lg-6 pb-3">
@@ -124,7 +119,7 @@ roles: [Designer, Photographer, Developer, Account Manager]
 
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row  ">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[10] %}
@@ -138,11 +133,11 @@ roles: [Designer, Photographer, Developer, Account Manager]
   </div>
 
   <div class="py-2">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2  ">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[5] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
          <h6 class="pt-2 text-muted">
            {{ image.alt }}
@@ -152,7 +147,7 @@ roles: [Designer, Photographer, Developer, Account Manager]
       <div class="col pb-2">
          <div class="ratio" style="--aspect-ratio: 66%">
            {% assign image = page.image[6] %}
-           {% include srcset.html %}
+           {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -162,11 +157,11 @@ roles: [Designer, Photographer, Developer, Account Manager]
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row  ">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[7] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -176,7 +171,7 @@ roles: [Designer, Photographer, Developer, Account Manager]
   </div>
 
   <div class="py-2">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2  ">
       <div class="col-sm-6 pb-3">
         </div>
   <div class="col-sm-6 pb-3">
@@ -187,11 +182,11 @@ roles: [Designer, Photographer, Developer, Account Manager]
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[8] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -201,11 +196,11 @@ roles: [Designer, Photographer, Developer, Account Manager]
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[9] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}

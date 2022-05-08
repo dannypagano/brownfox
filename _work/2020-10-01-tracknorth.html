@@ -5,27 +5,29 @@ layout: work
 hero:
 color: '#EE6345'
 image:
-- src: trk5.png
-- src: trk2.jpg
-- src: trk3.jpg
+- src: trk5.jpg
+- src: trk1.png
+- src: trk2.png
+- src: trk3.png
 - src: trk4.jpg
-- src: trk5.png
-- src: trk6.jpg
-- src: trk7.png
+- src: trk5.jpg
+- src: trk6.png
+- src: trk7.jpg
 - src: trk8.jpg
-categories:
-- category: Identity Design
+deliverables: [Branding and Identity]
+roles: [Designer]
+credit: yes
 description: Identity design for a rail services conglomerate serving the northern United States.
 
 ---
 
 
   <div class="py-2">
-    <div class="row ">
+    <div class="row">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[0] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -36,11 +38,11 @@ description: Identity design for a rail services conglomerate serving the northe
 
 
   <div class="py-2">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 ">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[1] %}
-          {% include srcset.html %}
+          {% include responsive-images-half.html %}
         </div>
          <h6 class="pt-2 text-muted">
            {{ image.alt }}
@@ -50,8 +52,8 @@ description: Identity design for a rail services conglomerate serving the northe
 
       <div class="col pb-2">
          <div class="ratio" style="--aspect-ratio: 66%">
-{% assign image = page.image[2] %}
-           {% include srcset.html %}
+           {% assign image = page.image[2] %}
+           {% include responsive-images-half.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -61,11 +63,78 @@ description: Identity design for a rail services conglomerate serving the northe
   </div>
 
   <div class="py-2">
-    <div class="row ">
+    <div class="row">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[3] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-2">
+    <div class="row">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[4] %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+        </div>
+      </div>
+  </div>
+
+  <div class="py-2">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[5] %}
+          {% include responsive-images-half.html %}
+        </div>
+         <h6 class="pt-2 text-muted">
+           {{ image.alt }}
+         </h6>
+      </div>
+
+      <div class="col pb-2">
+         <div class="ratio" style="--aspect-ratio: 66%">
+           {% assign image = page.image[6] %}
+           {% include responsive-images-half.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-2">
+    <div class="row">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[7] %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="py-2">
+    <div class="row">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[8] %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}

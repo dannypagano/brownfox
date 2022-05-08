@@ -24,18 +24,7 @@ License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
 	     url('alliance-no-1-regular.svg#youworkforthem') format('svg');
 	font-weight: normal;
 	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Alliance-Light';
-	src: url('alliance-no-1-light.eot');
-	src: url('alliance-no-1-light.eot?#iefix') format('embedded-opentype'),
-             url('alliance-no-1-light.woff2') format('woff2'),
-	     url('alliance-no-1-light.woff') format('woff'),
-	     url('alliance-no-1-light.ttf') format('truetype'),
-	     url('alliance-no-1-light.svg#youworkforthem') format('svg');
-	font-weight: normal;
-	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -48,6 +37,7 @@ License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
 	     url('alliance-no-1-semibold.svg#youworkforthem') format('svg');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 
@@ -79,10 +69,16 @@ License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
 	     url('generisch-mono-regular.svg#youworkforthem') format('svg');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
-
-
+/* Define the "system" font family */
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
 
 
 
@@ -152,13 +148,13 @@ nav ul {
 body {
 	background-color: black;
   color: white ;
-  font-family: "Alliance-Regular", Helvetica, Arial, sans-serif;
+  font-family: "Alliance-Regular", Helvetica, Arial, "System";
 	--animate-duration: 1s;
 
 }
 
 h1, h2, h3 {
-    font-family: "Alliance-SemiBold", Helvetica, Arial, sans-serif;
+    font-family: "Alliance-SemiBold", Helvetica, Arial, "System";
 }
 
 h2 {
@@ -166,22 +162,22 @@ h2 {
 }
 
 h5 {
-  font-family: "Alliance-Light", Helvetica, Arial, sans-serif;
+  font-family: "Alliance-Regular", Helvetica, Arial, "System";
   line-height: 2rem;
 	font-size: 1.5rem;
 }
 
 #post-column h5 {
-	font-family: "Alliance-Regular", Helvetica, Arial, sans-serif;
+	font-family: "Alliance-Regular", Helvetica, Arial, "System";
 }
 
 h6 {
-  font-family: "Generisch-Regular", Helvetica, Arial, sans-serif;
+  font-family: "Generisch-Regular", Helvetica, Arial, "System";
 	font-size: 1.2rem;
 }
 
 p {
-  font-family: "Alliance-Regular", Helvetica, Arial, sans-serif;
+  font-family: "Alliance-Regular", Helvetica, Arial, "System";
 	font-size: 1.2rem;
 	color: #6c757d;
 }
@@ -191,12 +187,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 a:hover {
-  opacity: 0.8;
-  color: #6C757D;
+  opacity: 0.75;
+	color: inherit;
 	transition: 0.2s;
 }
+
 .link {
   text-decoration: underline;
 }
@@ -222,7 +218,7 @@ nav a first:child {
 }
 
 #intro-block h3 {
-	font-family: "Alliance-Regular", Helvetica, Arial, sans-serif;
+	font-family: "Alliance-Regular";
 }
 
 .page-wrapper {
@@ -291,10 +287,6 @@ nav a first:child {
 }
 .post-tag {
 	vertical-align: middle;
-}
-
-.post-title {
-	font-weight: "Alliance-Regular", Helvetica, Arial, sans-serif;
 }
 
 
@@ -371,7 +363,6 @@ img {
 	h2.intro  {
 		font-size: 1.5rem;
 		line-height: 2rem;
-		font-family: "Alliance-Light", Helvetica, Arial, sans-serif;
 	}
 
 

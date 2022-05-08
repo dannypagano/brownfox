@@ -32,24 +32,12 @@ github_username:  dannypagano
 
 # Collections
 collections:
- work:
+  work:
     output: true
     permalink: /work/:title
- posts:
+  posts:
     output: true
     permalink: /posts/:year/:month/:day/:title/
-
-
-#srcset, sizes and dynamic media related
-image_url: /images
-default_width: '600'
-sizes: '(min-width: 900px) 90vw, (min-width: 991px) 900px, (min-width: 1399px) 1300px, (min-width: 2000px) 1920px,'
-
-srcset:
-  - 600
-  - 900
-  - 1300
-  - 1920
 
 # Front Matter Defaults
 
@@ -60,6 +48,104 @@ defaults:
     values:
      is_post: true
 
+# Plugins
+
+plugins:
+- jekyll-responsive-image
+
+
+# responsive image sizes for generating images
+sizes:
+  - 320  # [Required] How wide the resized image will be.
+  - 384
+  - 480
+  - 512
+  - 576
+  - 640
+  - 683
+  - 768
+  - 800
+  - 924
+  - 960
+  - 1025
+  - 1200
+  - 1366
+  - 1440
+  - 1600
+  - 1872
+  - 1920
+  - 2056
+image_url: /images/originals
+
+responsive_image:
+  # [Required]
+  # Path to the image template.
+  template: _includes/responsive-image.html #THIS ONE
+# [Optional, Default: 85]
+  # Quality to use when resizing images.
+  default_quality: 80
+# [Optional, Default: []]
+  # An array of resize configuration objects. Each object must contain at least
+  # a `width` value.
+  sizes:
+    - width: 320  # [Required] How wide the resized image will be.
+    - width: 384
+    - width: 480
+    - width: 512
+    - width: 576
+    - width: 640
+    - width: 683
+    - width: 768
+    - width: 800
+    - width: 924
+    - width: 960
+    - width: 1025
+    - width: 1200
+    - width: 1366
+    - width: 1440
+    - width: 1600
+    - width: 1872
+    - width: 1920
+    - width: 2056
+
+# [Optional, Default: false]
+  # Rotate resized images depending on their EXIF rotation attribute. Useful for
+  # working with JPGs directly from digital cameras and smartphones
+  auto_rotate: false
+# [Optional, Default: false]
+  # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size and win friends
+  # at Google PageSpeed.
+  strip: true
+# [Optional, Default: assets]
+  # The base directory where assets are stored. This is used to determine the
+  # `dirname` value in `output_path_format` below.
+  base_path: images/originals
+# [Optional, Default: assets/resized/%{filename}-%{width}x%{height}.%{extension}]
+  # The template used when generating filenames for resized images. Must be a
+  # relative path.
+  #
+  # Parameters available are:
+  #   %{dirname}     Directory of the file relative to `base_path` (assets/sub/dir/some-file.jpg => sub/dir)
+  #   %{basename}    Basename of the file (assets/some-file.jpg => some-file.jpg)
+  #   %{filename}    Basename without the extension (assets/some-file.jpg => some-file)
+  #   %{extension}   Extension of the file (assets/some-file.jpg => jpg)
+  #   %{width}       Width of the resized image
+  #   %{height}      Height of the resized image
+  #
+  output_path_format: images/resized/%{width}/%{basename}
+# [Optional, Default: true]
+  # Whether or not to save the generated assets into the source folder.
+  save_to_source: false
+# [Optional, Default: false]
+  # Cache the result of {% responsive_image %} and {% responsive_image_block %}
+  # tags. See the "Caching" section of the README for more information.
+  cache: false
+# [Optional, Default: []]
+  # By default, only images referenced by the responsive_image and responsive_image_block
+  # tags are resized. Here you can set a list of paths or path globs to resize other
+  # images. This is useful for resizing images which will be referenced from stylesheets.
+  extra_images:
+    - images/originals/*
 
 # Exclude from processing.
 # The following items will not be processed, by default.

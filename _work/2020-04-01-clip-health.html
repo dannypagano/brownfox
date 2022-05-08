@@ -5,219 +5,188 @@ title: Clip Health
 hero:
 color: '#2A97C9'
 image:
-- src: clp12.png
+- src: clp12.jpg
 - src: clp2.png
 - src: clp3.png
 - src: clp4.png
-- src: clp5.png
+- src: clp5.jpg
 - src: clp6.png
 - src: clp7.png
 - src: clp8.png
-- src: clp9.png
-- src: clp10.png
-- src: clp11.png
-- src: clp13.png
+- src: clp9.jpg
+- src: clp10.jpg
+- src: clp11.jpg
+- src: clp13.jpg
 video:
 - src: https://player.vimeo.com/video/653862628
 - src: https://player.vimeo.com/video/653864878
-categories:
-- category: Identity Design
-- category: Web Design
+deliverables: [Branding and Identity, Web Design, Web Development]
+roles: [Designer, Web Designer]
 description: Visual identity and web design for a consumer health startup creating Covid19 testing products for home use.
-
+credit: yes
 ---
 
 
-<div class="py-5 ">
-  <div class="row ">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[0] %}
-        {% include srcset.html %}
+
+  <div class="py-2">
+    <div class="row">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[0] %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+        </div>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
+  </div>
+
+
+  <div class="py-2">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[1] %}
+          {% include responsive-images-half.html %}
+        </div>
+         <h6 class="pt-2 text-muted">
+           {{ image.alt }}
+         </h6>
+      </div>
+
+
+      <div class="col pb-2">
+         <div class="ratio" style="--aspect-ratio: 66%">
+           {% assign image = page.image[2] %}
+           {% include responsive-images-half.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+      </div>
     </div>
   </div>
-</div>
 
-
-<div class="py-5 ">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 ">
-    <div class="col pb-3">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[1] %}
-        {% include srcset.html %}
-
+  <div class="py-2">
+    <div class="row">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[3] %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-    </div>
-
-    <div class="col pb-3">
-       <div class="ratio" style="--aspect-ratio: 66%">
-         {% assign image = page.image[2] %}
-         {% include srcset.html %}
-
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 ">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 ">
-    <div class="col pb-3">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[3] %}
-        {% include srcset.html %}
-
+  <div class="py-2">
+    <div class="row">
+      <div class="col pb-2">
+        <div class="ratio ratio-3x2 pb-2">
+          {% assign video = page.video[0] %}
+          {% include video-iframe.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ video.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-    </div>
-
-    <div class="col pb-3">
-       <div class="ratio" style="--aspect-ratio: 66%">
-         {% assign image = page.image[4] %}
-         {% include srcset.html %}
-
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 ">
-  <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 ">
-    <div class="col-sm-6 pb-3">
+  <div class="py-2">
+    <div class="row">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[4] %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+        </div>
       </div>
-<div class="col-sm-6 pb-3">
-  <h4>Clip Health is launching a home-use version of their EUA-authorized Covid19 test.</h4>
-  <h5 >Pairing consumable test kits, with a smartphone connected device, Clip Health hopes to offer a suite of home-use health tests for various ailments in addition to home testing for Covid19.</h5>
-</div>
-</div>
-</div>
+  </div>
 
-<div class="mt-5 py-5 ">
-  <div class="row ">
-    <div class="col">
-      <div class="ratio ratio-3x2 pb-3">
-        {% assign video = page.video[0] %}
-        {% include video-iframe.html %}
-
+  <div class="py-2">
+    <div class="row">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[10] %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ video.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 ">
-  <div class="row ">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[5] %}
-        {% include srcset.html %}
+  <div class="py-2">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+      <div class="col pb-2">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[5] %}
+          {% include responsive-images-half.html %}
+        </div>
+         <h6 class="pt-2 text-muted">
+           {{ image.alt }}
+         </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
+
+      <div class="col pb-2">
+         <div class="ratio" style="--aspect-ratio: 66%">
+           {% assign image = page.image[6] %}
+           {% include responsive-images-half.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
+      </div>
     </div>
   </div>
-</div>
 
-
-
-<div class="py-5 ">
-  <div class="row ">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[6] %}
-        {% include srcset.html %}
+  <div class="py-2">
+    <div class="row">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[7] %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 ">
-  <div class="row ">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[7] %}
-        {% include srcset.html %}
+
+  <div class="py-2">
+    <div class="row">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[8] %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
 
-<div class="py-5 ">
-  <div class="row ">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[9] %}
-        {% include srcset.html %}
+  <div class="py-2">
+    <div class="row">
+      <div class="col">
+        <div class="ratio" style="--aspect-ratio: 66%">
+          {% assign image = page.image[9] %}
+          {% include responsive-images-full.html %}
+        </div>
+        <h6 class="pt-2 text-muted">
+          {{ image.alt }}
+        </h6>
       </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
     </div>
   </div>
-</div>
-
-<div class="py-5 ">
-  <div class="row ">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[10] %}
-        {% include srcset.html %}
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-    </div>
-  </div>
-</div>
-
-<div class="py-5 ">
-  <div class="row ">
-    <div class="col">
-      <div class="ratio" style="--aspect-ratio: 66%">
-        {% assign image = page.image[11] %}
-        {% include srcset.html %}
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ image.alt }}
-      </h6>
-    </div>
-  </div>
-</div>
-
-<div class="mt-5 py-5 ">
-  <div class="row ">
-    <div class="col">
-      <div class="ratio ratio-3x2 pb-3">
-        {% assign video = page.video[1] %}
-        {% include video-iframe.html %}
-
-      </div>
-      <h6 class="pt-2 text-muted">
-        {{ video.alt }}
-      </h6>
-    </div>
-  </div>
-</div>

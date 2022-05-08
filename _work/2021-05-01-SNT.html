@@ -2,34 +2,37 @@
 published: true
 title: Scintillation Nanotechnologies
 layout: work
-hero: /images/1300w/snt4.png
+hero: /images/resized/2056/snt4.jpg
+color: '#0477F8'
 image:
-- src: snt4.png
+- src: snt4.jpg
 - src: snt1.png
 - src: snt3.png
-- src: snt2.png
+- src: snt2.jpg
 - src: snt5.png
 - src: snt6.png
 - src: snt7.png
 - src: snt8.png
 - src: snt9.png
-- src: snt10.png
+- src: snt10.jpg
 - src: snt11.png
 - src: snt12.png
 video:
 - src: https://player.vimeo.com/video/652261296
-categories:
-- category: Identity Design
-- category: Web Development
+deliverables: [Branding and Identity, Web Design, Web Development]
+roles: [Designer, Developer, Account Manager]
+credit: yes
 description: Identity design for a life sciences startup empowering new, unseen insights in biological research.
 
 ---
-{% assign image = page.image[0] %}
+
+
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
-          {% include srcset.html %}
+          {% assign image = page.image[0] %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -38,24 +41,24 @@ description: Identity design for a life sciences startup empowering new, unseen 
       </div>
   </div>
 
-{% assign image = page.image[1] %}
+
   <div class="py-2">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
-
-          {% include srcset.html %}
+          {% assign image = page.image[1] %}
+          {% include responsive-images-half.html %}
         </div>
          <h6 class="pt-2 text-muted">
            {{ image.alt }}
          </h6>
       </div>
 
-{% assign image = page.image[2] %}
+
       <div class="col pb-2">
          <div class="ratio" style="--aspect-ratio: 66%">
-
-           {% include srcset.html %}
+           {% assign image = page.image[2] %}
+           {% include responsive-images-half.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -65,11 +68,11 @@ description: Identity design for a life sciences startup empowering new, unseen 
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[3] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -79,12 +82,11 @@ description: Identity design for a life sciences startup empowering new, unseen 
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col pb-2">
         <div class="ratio ratio-3x2 pb-2">
           {% assign video = page.video[0] %}
           {% include video-iframe.html %}
-
         </div>
         <h6 class="pt-2 text-muted">
           {{ video.alt }}
@@ -94,11 +96,11 @@ description: Identity design for a life sciences startup empowering new, unseen 
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[4] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -107,28 +109,12 @@ description: Identity design for a life sciences startup empowering new, unseen 
       </div>
   </div>
 
-  <div class="py-5">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-
-      <div class="col-sm-6 col-lg-6 pb-3">
-      </div>
-      <div class="col-sm-6 col-lg-6 pb-3">
-        <div class="col col-sm-12 col-md-6 col-lg-6 pb-5 float-end">
-        <hr></hr>
-        <h5>Work Text Title Goes Here</h5>
-        <p>Text content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo duis ut diam quam nulla porttitor. Egestas purus viverra accumsan in nisl nisi scelerisque</p>
-      </div>
-      </div>
-    </div>
-  </div>
-
-
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[10] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -138,11 +124,11 @@ description: Identity design for a life sciences startup empowering new, unseen 
   </div>
 
   <div class="py-2">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
       <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[5] %}
-          {% include srcset.html %}
+          {% include responsive-images-half.html %}
         </div>
          <h6 class="pt-2 text-muted">
            {{ image.alt }}
@@ -152,7 +138,7 @@ description: Identity design for a life sciences startup empowering new, unseen 
       <div class="col pb-2">
          <div class="ratio" style="--aspect-ratio: 66%">
            {% assign image = page.image[6] %}
-           {% include srcset.html %}
+           {% include responsive-images-half.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -162,11 +148,11 @@ description: Identity design for a life sciences startup empowering new, unseen 
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[7] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -175,23 +161,13 @@ description: Identity design for a life sciences startup empowering new, unseen 
     </div>
   </div>
 
-  <div class="py-2">
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2 work">
-      <div class="col-sm-6 pb-3">
-        </div>
-  <div class="col-sm-6 pb-3">
-    <h4>To describe their various product features we designed a series of unique icons.</h4>
-    <h5 >The 5x7 grid was inspired by both the sphere shape of the nanoparticles, but also the grid of well-plate wells used in many life science applications.</h5>
-  </div>
-  </div>
-  </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[8] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
@@ -201,11 +177,11 @@ description: Identity design for a life sciences startup empowering new, unseen 
   </div>
 
   <div class="py-2">
-    <div class="row work">
+    <div class="row">
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[9] %}
-          {% include srcset.html %}
+          {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
           {{ image.alt }}
