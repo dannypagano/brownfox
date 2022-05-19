@@ -7,11 +7,11 @@ color: '#FEB12E'
 image:
 - src: nst1.jpg
 - src: nst2.jpg
-- src: nst3.jpg
-- src: nst4.jpg
-- src: nst5.jpg
-- src: nst6.jpg
-- src: nst7.jpg
+- src: nst3.png
+- src: nst4.png
+- src: nst5.png
+- src: nst6.png
+- src: nst7.png
 - src: nst8.jpg
 deliverables: [Branding and Identity]
 roles: [Designer]
@@ -78,20 +78,6 @@ video: https://player.vimeo.com/video/136413110
   <div class="py-2">
     <div class="row">
       <div class="col pb-2">
-        <div class="ratio ratio-3x2 pb-2">
-          {% assign video = page.video[0] %}
-          {% include video-iframe.html %}
-        </div>
-        <h6 class="pt-2 text-muted">
-          {{ video.alt }}
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="py-2">
-    <div class="row">
-      <div class="col pb-2">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[4] %}
           {% include responsive-images-full.html %}
@@ -101,20 +87,6 @@ video: https://player.vimeo.com/video/136413110
         </h6>
         </div>
       </div>
-  </div>
-
-  <div class="py-2">
-    <div class="row">
-      <div class="col pb-2">
-        <div class="ratio" style="--aspect-ratio: 66%">
-          {% assign image = page.image[10] %}
-          {% include responsive-images-full.html %}
-        </div>
-        <h6 class="pt-2 text-muted">
-          {{ image.alt }}
-        </h6>
-      </div>
-    </div>
   </div>
 
   <div class="py-2">
@@ -146,35 +118,6 @@ video: https://player.vimeo.com/video/136413110
       <div class="col">
         <div class="ratio" style="--aspect-ratio: 66%">
           {% assign image = page.image[7] %}
-          {% include responsive-images-full.html %}
-        </div>
-        <h6 class="pt-2 text-muted">
-          {{ image.alt }}
-        </h6>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="py-2">
-    <div class="row">
-      <div class="col">
-        <div class="ratio" style="--aspect-ratio: 66%">
-          {% assign image = page.image[8] %}
-          {% include responsive-images-full.html %}
-        </div>
-        <h6 class="pt-2 text-muted">
-          {{ image.alt }}
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="py-2">
-    <div class="row">
-      <div class="col">
-        <div class="ratio" style="--aspect-ratio: 66%">
-          {% assign image = page.image[9] %}
           {% include responsive-images-full.html %}
         </div>
         <h6 class="pt-2 text-muted">
